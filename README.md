@@ -4,6 +4,10 @@ Corto animado de 48 segundos en HTML, CSS, JavaScript y Phaser 3.90.0. Los perso
 
 ## Abrir
 
+Sitio web: https://leidy-jaramillo.github.io/circuito_academico/
+
+GitHub Actions publica los cambios de `main` en GitHub Pages. El proceso descarga los WAV con Git LFS y genera copias MP3 a 128 kb/s para la web, verificando sus duraciones. Los originales no se modifican. Para generar la publicación localmente se requiere Python, FFmpeg y FFprobe: `python scripts/build-web.py`.
+
 Los audios originales se almacenan mediante **Git LFS**. Instalar Git LFS antes de clonar el repositorio:
 
 ```sh
