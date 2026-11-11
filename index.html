@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>El circuito del cumplimiento académico</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main>
+ <header><a class="brand course-brand" href="./"><span>Asignatura: Educación y pensamiento II (2026-2) MEMTIC GR2<br><small style="display:inline-block">Presentado por Leidy Johanna Jaramillo Caicedo</small></span></a><span class="edition">CORTO INTERACTIVO <b>01</b></span></header>
+ <section class="intro"><div><p class="eyebrow">UNA HISTORIA SOBRE EDUCACIÓN E INTELIGENCIA ARTIFICIAL</p><h1>EL CIRCUITO DEL<br><span>CUMPLIMIENTO ACADÉMICO</span></h1></div><p class="summary">¿Estamos formando ingenieros o certificando el cumplimiento de actividades?</p></section>
+ <section class="player" aria-label="Corto animado">
+  <div class="stage-top"><span><i></i> <span id="status">LISTO PARA COMENZAR</span></span><span id="counter">ESCENA 01 / 06</span></div>
+  <div id="game" role="img" aria-label="Escenario animado con un profesor, un estudiante y una plataforma académica"></div>
+  <div class="caption" aria-live="polite"><span id="speaker">NARRADOR</span><p id="caption">Todo comienza con una actividad. Pulsa reproducir para seguir su recorrido.</p></div>
+  <section id="result" class="result" aria-live="polite" hidden><div><span class="eyebrow">✓ REGISTRO COMPLETADO · SIMULACIÓN</span><h2>La entrega queda registrada</h2><p><strong>Calificación: 4.5 / 5.0</strong> · Valor ilustrativo</p><p><strong>Evidencia de aprendizaje:</strong> producto entregado por el estudiante.</p><p><strong>Retroalimentación:</strong> el producto cumple los criterios de análisis, propuesta y formato establecidos.</p></div><button type="button" id="replay-result">↺ Volver a reproducir</button></section>
+  <div class="controls"><button id="play" class="primary" disabled>▶ Reproducir</button><button id="restart" title="Volver al inicio">↺ <span>Reiniciar</span></button><div class="time"><span id="elapsed">00:00</span><input id="seek" type="range" min="0" max="48" step="0.1" value="0" aria-label="Posición del corto"><span>00:48</span></div><select id="speed" aria-label="Velocidad"><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="0.75">0.75×</option></select><button id="fullscreen" title="Pantalla completa" aria-label="Pantalla completa">⛶</button></div>
+ </section>
+ <nav id="chapters" aria-label="Escenas del corto"></nav>
+ <section class="reflection" aria-labelledby="reflection-title">
+  <div class="thinking-professor"><img class="author-portrait" src="assets/yop.png" alt="Leidy Johanna Jaramillo Caicedo, representada como personaje de bloques"><span>Una pausa para pensar</span><button type="button" id="open-questions" class="questions-button" aria-haspopup="dialog">Lluvia de preguntas incómodas</button><i aria-hidden="true"></i><i aria-hidden="true"></i></div>
+  <article class="thought-bubble">
+   <p class="eyebrow">PLANTEAMIENTO DE LA SITUACIÓN</p>
+   <h2 id="reflection-title">La ingeniería del sinsentido</h2>
+   <h3>La pérdida de sentido en la formación del ingeniero de sistemas en la era de la inteligencia artificial</h3>
+   <p>La creciente incorporación de la inteligencia artificial en los procesos académicos está transformando la manera en que estudiantes y docentes desarrollan sus actividades. Hoy es posible producir trabajos, resolver problemas, generar retroalimentaciones y documentar resultados de aprendizaje con una intervención significativa de estas herramientas.</p>
+   <p>Sin embargo, esta transformación plantea una inquietud fundamental: aunque los procesos académicos se cumplen y existen evidencias de sus resultados, no siempre resulta claro qué aprendizajes significativos se están construyendo, qué capacidades humanas se están desarrollando y qué sentido encuentran los estudiantes en su formación profesional.</p>
+   <p>En el contexto de la Ingeniería de Sistemas, esta preocupación adquiere especial relevancia porque la inteligencia artificial también está transformando las actividades propias de la profesión, lo que invita a cuestionar no solamente cómo enseñamos, sino qué significa aprender a ser ingeniero de sistemas y cuál es el propósito de esa formación en el mundo actual.</p>
+   <p>Un profesor diseña una actividad utilizando inteligencia artificial. Un estudiante recibe las instrucciones, utiliza otra IA para desarrollar la solución y entrega un producto que cumple los criterios establecidos. El profesor utiliza IA para revisar el trabajo y generar una retroalimentación. Finalmente, la plataforma registra una calificación y una evidencia de aprendizaje.</p>
+   <p>No significa que necesariamente no haya existido aprendizaje. El estudiante pudo haber aprendido mucho interactuando con la IA. El docente pudo haber realizado una evaluación rigurosa apoyándose en ella.</p>
+   <p class="reflection-emphasis">Pero el cumplimiento del proceso no garantiza que haya ocurrido una transformación intelectual en el estudiante.</p>
+   <h3 class="central-question">Pregunta central</h3>
+   <blockquote>Si la inteligencia artificial puede hacer gran parte de lo que enseñamos, de lo que los estudiantes entregan y de lo que los docentes evaluamos, ¿qué sentido tiene hoy estudiar Ingeniería de Sistemas?</blockquote>
+  </article>
+  <aside class="interviews" aria-labelledby="interviews-title">
+   <p class="eyebrow">VOCES DESDE LA EXPERIENCIA</p>
+   <h2 id="interviews-title">Zafari de observación</h2>
+   <p class="interviews-intro">Tres entrevistas para escuchar y ampliar la reflexión sobre la formación profesional.</p>
+   <article class="interview-card">
+    <span class="interview-number">ENTREVISTA 01</span>
+    <h3>Brayan F. Diaz</h3><p>Doctor en Física</p>
+    <audio controls preload="metadata" aria-label="Audio de la entrevista 1: Doctor en Física Brayan F. Diaz"><source src="assets/audio/entrevista-1.wav" type="audio/wav">Tu navegador no admite audio HTML.</audio><p class="audio-error" hidden>No se pudo cargar el audio. Puedes usar el enlace a Google Drive.</p>
+    <a href="https://drive.google.com/file/d/1Ydg0F-W0N6j2OmJRFunt8qqD4IHRe7F3/view?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir entrevista en Google Drive ↗</a>
+   </article>
+   <article class="interview-card">
+    <span class="interview-number">ENTREVISTA 02</span>
+    <h3>Carlos Mario Paredes</h3><p>Doctor en Ingeniería</p>
+    <audio controls preload="metadata" aria-label="Audio de la entrevista 2: Doctor en Ingeniería Carlos Mario Paredes"><source src="assets/audio/entrevista-2.wav" type="audio/wav">Tu navegador no admite audio HTML.</audio><p class="audio-error" hidden>No se pudo cargar el audio. Puedes usar el enlace a Google Drive.</p>
+    <a href="https://drive.google.com/file/d/1K4Pae86Ja7DEG5sSZTAcEarbkDyfr1mn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir entrevista en Google Drive ↗</a>
+   </article>
+   <article class="interview-card">
+    <span class="interview-number">ENTREVISTA 03</span>
+    <h3>Director del programa de Ingeniería Multimedia</h3>
+    <audio controls preload="metadata" aria-label="Audio de la entrevista 3: Director del programa de Ingeniería Multimedia"><source src="assets/audio/entrevista-3.wav" type="audio/wav">Tu navegador no admite audio HTML.</audio><p class="audio-error" hidden>No se pudo cargar el audio. Puedes usar el enlace a Google Drive.</p>
+    <a href="https://drive.google.com/file/d/1SayU3VeJAD6-6etb8Fp-v_eLE-zUvJBw/view?usp=sharing" target="_blank" rel="noopener noreferrer">Abrir entrevista en Google Drive ↗</a>
+   </article>
+  </aside>
+ </section>
+ <section class="ai-disclosure" aria-labelledby="ai-disclosure-title">
+  <p class="eyebrow">TRANSPARENCIA Y AUTORÍA</p>
+  <h2 id="ai-disclosure-title">Declaración de uso de inteligencia artificial</h2>
+  <p>Este trabajo fue desarrollado por <strong>Leidy Johanna Jaramillo Caicedo</strong> con el apoyo de <strong>Codex, una herramienta de inteligencia artificial de OpenAI</strong>, para su implementación técnica. Las ideas, el planteamiento del problema, la organización del contenido y la orientación de la reflexión fueron propuestos y definidos por la autora, quien también realizó las entrevistas y proporcionó los materiales utilizados.</p>
+  <p>Codex se utilizó para generar y ajustar el código HTML, CSS y JavaScript, implementar las animaciones con Phaser e integrar las imágenes, los reproductores de audio y la interacción de preguntas. El desarrollo se realizó de manera iterativa, a partir de las indicaciones, revisiones y decisiones de la autora.</p>
+  <p>La inteligencia artificial se empleó como apoyo para materializar y presentar la propuesta. La autoría de las ideas, la intención académica y la responsabilidad sobre el contenido final corresponden a Leidy Johanna Jaramillo Caicedo.</p>
+ </section>
+</main>
+<dialog id="questions-dialog" class="question-burst" aria-labelledby="questions-title" aria-describedby="burst-hint">
+ <button type="button" class="close-questions" id="next-question" aria-label="Cerrar esta pregunta y mostrar la siguiente">×</button>
+ <p class="eyebrow" id="burst-counter"></p>
+ <h2 id="questions-title"></h2>
+ <p id="burst-hint">¿La cierras? Otra pregunta te espera.</p>
+ <div class="burst-actions"><button type="button" id="dismiss-question" class="primary">Cerrar esta pregunta →</button><button type="button" id="stop-questions">Detener la ráfaga</button></div>
+</dialog>
+<script src="vendor/phaser.min.js"></script><script src="app.js"></script><script src="interviews.js"></script><script src="questions.js"></script>
+</body></html>
