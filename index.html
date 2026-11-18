@@ -3,6 +3,11 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>El circuito del cumplimiento académico</title><link rel="stylesheet" href="styles.css"></head>
 <body>
 <main>
+ <nav class="week-tabs" role="tablist" aria-label="Semanas del proyecto">
+  <button type="button" role="tab" id="tab-week-1" aria-controls="week-1" aria-selected="true" tabindex="0">Semana 1: El Desafío y el Entorno</button>
+  <button type="button" role="tab" id="tab-week-2" aria-controls="week-2" aria-selected="false" tabindex="-1">Semana 2: Ideas múltiples</button>
+ </nav>
+ <div id="week-1" class="week-panel" role="tabpanel" aria-labelledby="tab-week-1">
  <header><a class="brand course-brand" href="./"><span>Asignatura: Educación y pensamiento II (2026-2) MEMTIC GR2<br><small style="display:inline-block">Presentado por Leidy Johanna Jaramillo Caicedo</small></span></a><span class="edition">CORTO INTERACTIVO <b>01</b></span></header>
  <section class="intro"><div><p class="eyebrow">UNA HISTORIA SOBRE EDUCACIÓN E INTELIGENCIA ARTIFICIAL</p><h1>EL CIRCUITO DEL<br><span>CUMPLIMIENTO ACADÉMICO</span></h1></div><p class="summary">¿Estamos formando ingenieros o certificando el cumplimiento de actividades?</p></section>
  <section class="player" aria-label="Corto animado">
@@ -59,6 +64,8 @@
   <p>Codex se utilizó para generar y ajustar el código HTML, CSS y JavaScript, implementar las animaciones con Phaser e integrar las imágenes, los reproductores de audio y la interacción de preguntas. El desarrollo se realizó de manera iterativa, a partir de las indicaciones, revisiones y decisiones de la autora.</p>
   <p>La inteligencia artificial se empleó como apoyo para materializar y presentar la propuesta. La autoría de las ideas, la intención académica y la responsabilidad sobre el contenido final corresponden a Leidy Johanna Jaramillo Caicedo.</p>
  </section>
+ </div>
+ <div id="week-2" class="week-panel week-panel-empty" role="tabpanel" aria-labelledby="tab-week-2" tabindex="0" hidden></div>
 </main>
 <dialog id="questions-dialog" class="question-burst" aria-labelledby="questions-title" aria-describedby="burst-hint">
  <button type="button" class="close-questions" id="next-question" aria-label="Cerrar esta pregunta y mostrar la siguiente">×</button>
@@ -67,5 +74,5 @@
  <p id="burst-hint">¿La cierras? Otra pregunta te espera.</p>
  <div class="burst-actions"><button type="button" id="dismiss-question" class="primary">Cerrar esta pregunta →</button><button type="button" id="stop-questions">Detener la ráfaga</button></div>
 </dialog>
-<script src="vendor/phaser.min.js"></script><script src="app.js"></script><script src="interviews.js"></script><script src="questions.js"></script>
+<script src="vendor/phaser.min.js"></script><script src="app.js"></script><script src="interviews.js"></script><script src="questions.js"></script><script src="tabs.js"></script>
 </body></html>

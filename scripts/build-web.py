@@ -9,7 +9,7 @@ root = Path(__file__).resolve().parents[1]
 out = root / 'dist'
 out.mkdir(exist_ok=True)
 (out / 'assets' / 'audio').mkdir(parents=True, exist_ok=True)
-for name in ['index.html', 'styles.css', 'app.js', 'questions.js', 'interviews.js']:
+for name in ['index.html', 'styles.css', 'app.js', 'questions.js', 'interviews.js', 'tabs.js']:
     shutil.copy2(root / name, out / name)
 shutil.copytree(root / 'vendor', out / 'vendor', dirs_exist_ok=True)
 for source in (root / 'assets').glob('*.png'):

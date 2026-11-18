@@ -25,7 +25,7 @@ function toggle(){if(clock>=duration)clock=0;playing=!playing;renderUI()}
 $('replay-result').onclick=()=>{playing=true;jump(0)};
 $('play').onclick=toggle;$('restart').onclick=()=>{playing=false;jump(0)};$('seek').oninput=e=>jump(+e.target.value);$('speed').onchange=e=>rate=+e.target.value;
 $('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.querySelector('.player').requestFullscreen()}catch{$('status').textContent='PANTALLA COMPLETA NO DISPONIBLE'}};
-document.addEventListener('keydown',e=>{if(['INPUT','SELECT','BUTTON'].includes(document.activeElement.tagName))return;if(e.code==='Space'){e.preventDefault();if(scene)toggle()}if(e.code==='ArrowRight')jump(clock+sceneDuration);if(e.code==='ArrowLeft')jump(clock-sceneDuration)});
+document.addEventListener('keydown',e=>{if(document.getElementById('week-1')?.hidden)return;if(['INPUT','SELECT','BUTTON'].includes(document.activeElement.tagName))return;if(e.code==='Space'){e.preventDefault();if(scene)toggle()}if(e.code==='ArrowRight')jump(clock+sceneDuration);if(e.code==='ArrowLeft')jump(clock-sceneDuration)});
 if(!window.Phaser){$('caption').textContent='No se pudo cargar Phaser. Comprueba que exista vendor/phaser.min.js y abre el proyecto mediante localhost.';throw Error('Phaser unavailable')}
 class Circuito extends Phaser.Scene{
  preload(){this.load.image('prof','assets/sprite_profe.png');this.load.image('student','assets/sprite_estudiante.png');this.load.on('loaderror',()=>{$('caption').textContent='No se pudo cargar una imagen. Revisa la carpeta assets.'})}
